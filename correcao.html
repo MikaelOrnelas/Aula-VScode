@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Formulários </title>
+</head>
+<body bgcolor="#F5F5F5">
+	<h3>Formulários</h3>
+	<form action="servidor" method="POST">
+		<label>Digite o nome</label>
+		<input type="text" name="nome_user" id="n_user" maxlength="12" placeholder="Digite seu nome" size="12" required="true">
+		<br/>
+		<label>Senha</label>
+		<input type="password" name="senha_user" id="s_user" maxlength="6">
+		<br/>
+		<br/>
+		<textarea>Digite um texto</textarea>
+		<br/>
+		<label>Opções</label>
+		<select>
+			<option>Escolha uma opção</option>
+			<option value="OP1">Opção 1</option>
+			<option value="OP2">Opção 2</option>
+			<option value="OP3">Opção 3</option>
+		</select>
+		<br/>
+		<label>Selecione a disciplina</label><br/>
+		<input type="checkbox" name="opcao" value="TecWeb"/>Tecnologia Web<br/>
+		<input type="checkbox" name="opcao" value="ES"/>Engenharia de Software<br/>
+		<input type="checkbox" name="opcao" value="LP2"/>Linguagem de Programação 2
+		<br/>
+		<label>Escolha o semestre:</label><br/>
+		<input type="radio" name="opcao" value="1S"/>1º Semestre<br/>
+		<input type="radio" name="opcao" value="2S"/>2º Semestre<br/>
+		<input type="radio" name="opcao" value="3S"/>3º Semestre<br/>
+		<br/>
+		<label>Digite seu e-mail</label><br/>
+		<input type="email" name="email"/><br/>
+		<input type="submit" value="OK"><br/>
+		<input type="reset" value="limpar"/>
+		<button onclick="">Enviar</button><br/>
+	</form>
+</body>
+</html>
